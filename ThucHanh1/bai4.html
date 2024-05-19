@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../ckeditor/ckeditor.js"></script>
+    <script src="https://kit.fontawesome.com/dfde5b6d39.js" crossorigin="anonymous"></script>
+               
+</head>
+<style>
+    form{
+        border: 8px solid rgba(0,0,0,0.1);}
+    nav{ 
+        border-bottom: 1px solid black;
+    }
+    
+
+    .flex-box{
+        display: flex;
+    }
+    
+    .textbox1{
+        display: flex;
+        margin-top: 20px;
+    }
+    button{
+        background-color:black;
+        color: white;
+
+    }
+    .flex-box1{
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
+<body>
+    <form>
+        <nav>Basic Info</nav>
+        <div class = "flex-box">
+            <div style ="margin-right:20px" >
+                <p>Employee ID</p>
+                <p>Last Name</p>
+                <p>First Name</p>
+                <p style ="margin-top:40px; margin-bottom:40px">Gender</p>
+                <p>Title</p>
+                <p>Sufix</p>
+                <p>BirthDate</p>
+                <p>HireDate</p>
+                <p>SSN # (if applicable)</p>
+                <p>Reports To</p>
+            </div>
+            <div>
+                <p>9</p>
+                <p>Dolsworth</p>
+                <input class="box" style="width: 200px" type="textbox"><br>
+                <div >
+                    <input type="radio" id ="male" name="fav_language" value="Male">
+                    <label for="male">Male </label><br>
+                    <input type="radio" id ="female" name="fav_language" value="Female">
+                    <label for="female">Female </label><br>
+                    <input type="radio" id ="x" name="fav_language" value="XXX">
+                    <label for="x">XXX</label><br>
+                    <input type="radio" id ="z" name="fav_language" value="ZZZ">
+                    <label for="z">ZZZ </label><br>
+                </div>
+                <div style="width: 200px;margin-top:5px">
+                    <input clas="textbox1"  style="width: 500px;margin:7px" type="textbox"><br>
+                    <input clas="textbox1"  style="width: 500px;margin:7px" type="textbox"><br>
+                    <input clas="textbox1"  style="width: 500px;margin:7px" type="textbox"><br>
+                    <input clas="textbox1"  style="width: 500px;margin:7px" type="textbox"><br>
+                    <input clas="textbox1"  style="width: 500px;margin:7px" type="textbox"><br>
+                </div>
+            
+                
+            </div>
+        </div>
+        <nav>Contact Info</nav>
+        <div class = "flex-box">
+            <div style ="margin-right:20px" >
+                <p>Email</p>
+                <p>Address</p>
+                <p>City</p>
+                <p >Region</p>
+                <p>Postal Code</p>
+                <p>Country</p>
+                <p>US Home Phone</p>
+                <p>Photo</p>
+                
+            </div>
+            <div style="width: 200px;margin-top:5px">
+                    <input clas="textbox1"  style="width: 500px;margin:7px" type="textbox"><br>
+                    <input clas="textbox1"  style="width: 500px;margin:7px" type="textbox"><br>
+                    <input clas="textbox1"  style="width: 500px;margin:7px" type="textbox"><br>
+                    <input clas="textbox1"  style="width: 500px;margin:7px" type="textbox"><br>
+                    <input clas="textbox1"  style="width: 500px;margin:7px" type="textbox"><br>
+                    <select name="country" id="country" style="margin: 7px;width:auto" >
+                        <option value="Russian Federation">Russian Federation</option>
+                        <option value="China">China</option>
+                        <option value="England">England</option>
+                    </select>
+                    <input clas="textbox1"  style="width: 500px;margin:7px" type="textbox"><br>
+                    <input clas="textbox1"  style="width: 500px;margin:7px" type="textbox"><br>
+            </div>
+        </div>
+            <div>
+                <nav> Optional Info</nav>
+                <div class = "flex-box">
+                    <div style ="margin-right:20px" >
+                        <p style="margin-top:40px ; margin-bottom:40px">Notes</p>
+                        <p style="margin-top:10px ; margin-bottom:10px">Preferred Shift</p>
+                        <p style="margin-top:1px ; margin-bottom:1px">Active?</p>
+                        <p style="margin-top:10px ; margin-bottom:10px">Are you humman?</p>
+                    </div>
+                    <div>
+                        <div id="text-editor"></div>
+                        <div>
+                            <input type="checkbox" name="Regular" value="Regular">
+                            <label for="Regular">Regular</label><br>
+                            <input type="checkbox" name="Gravy Yard" value="Gravy Yard">
+                            <label for="Gravy Yard">Gravy Yard</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="active" value="Active">
+                            <label for="Active"></label>
+                        </div>
+                        <div>
+                            <label>TIDAWO</label>
+                            <div style="display:flex; justify-content:center;">
+                                <label>Click to change</label>
+                            </div>
+                            <input clas="textbox1"  style="width: 600px;margin:5px" type="textbox"><br><br>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+                       
+        </div>
+        <div>
+            <nav></nav><br>
+
+            <div class = "flex-box1">
+                <div>
+                    <i class="fa-solid fa-square-caret-left"></i>
+                    <i class="fa-solid fa-square-caret-right"></i>
+                </div>
+    
+               
+                <div>
+                    <button type="button">Submit</button>
+                    <button ><i class="fa-solid fa-xmark"></i>  Cancel</button>
+                </div>
+            </div>
+            <div>
+                <p> * required</p>
+            </div>
+            
+        </div>
+           
+    </form>
+    
+
+
+    <script>
+        ClassicEditor
+        .create( document.querySelector( '#text-editor' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+    </script>
+</body>
+</html>
